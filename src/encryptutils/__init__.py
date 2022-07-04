@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from cryptography.fernet import Fernet
 
 def encrypt(string, key=None):
