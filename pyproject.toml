@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "c"
+version = "0.1.0b"
+authors = [
+  { name="AfterNoonPM", email="h2o.Drop2010+pypi@gmail.com" },
+  {},
+]
+description = "A small encrypting/decrypting toolkit which includes support for strings and files."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+	"cryptography"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tinkering-townsperson/encryptutils"
+"Bug Tracker" = "https://github.com/tinkering-townsperson/encryptutils/issues"
