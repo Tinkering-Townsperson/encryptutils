@@ -41,6 +41,7 @@ pip install encryptutils
 
 ### Using `git clone`
 ***WARNING: THIS SECTION IS A WORK IN PROGRESS***
+
 You can also install EncryptUtils by running `git clone`.
 
 #### Unix/mac/linux:
