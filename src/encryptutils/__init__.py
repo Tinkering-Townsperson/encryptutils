@@ -8,7 +8,7 @@ def encrypt(string, key=None):
 		key = Fernet.generate_key()
 	f = Fernet(key)
 	string = bytes(string, encoding="utf-8")
-	return(f.encrypt(string))
+	return(key + b"\n\n" + f.encrypt(string))
 def decrypt(string):
 	"""
 	Decrypts a string passed as an argument.
