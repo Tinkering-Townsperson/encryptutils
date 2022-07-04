@@ -5,8 +5,7 @@ build-backend = "setuptools.build_meta"
 name = "c"
 version = "0.1.0b"
 authors = [
-  { name="AfterNoonPM", email="h2o.Drop2010+pypi@gmail.com" },
-  {},
+  { name="AfterNoonPM", email="h2o.Drop2010+pypi@gmail.com" }
 ]
 description = "A small encrypting/decrypting toolkit which includes support for strings and files."
 readme = "README.md"
