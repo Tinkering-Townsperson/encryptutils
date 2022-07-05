@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: encryptutils
-Version: 0.1.0b0
+Version: 0.1.1b0
 Summary: A small encrypting/decrypting toolkit which includes support for strings and files.
 Author-email: AfterNoonPM <h2o.Drop2010+pypi@gmail.com>
 License: MIT License
