@@ -7,14 +7,20 @@ def encrypt(string, key=None):
 	if not key:
 		key = Fernet.generate_key()
 	f = Fernet(key)
-	string = bytes(string, encoding="utf-8")
+	try:
+		string = bytes(string, encoding="utf-8")
+	except:
+		pass
 	return(key + b"\n\n" + f.encrypt(string))
 def decrypt(string):
 	"""
 	Decrypts a string passed as an argument.
 	"""
-	string = bytes(string, encoding="utf-8")
-	string, key = string.split("\n\n")
+	try:
+		string = bytes(string, encoding="utf-8")
+	except:
+		pass
+	key, string = string.split(b"\n\n")
 	f = Fernet(key)
 	return(f.decrypt(string))
 def encrypt_file(file, key=None):
